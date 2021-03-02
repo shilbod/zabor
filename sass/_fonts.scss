@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Gilroy Regular';
+  font-display: swap;
+  src: url('../fonts/Gilroy-Regular.eot');
+  src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  font-display: swap;
+  src: url('../fonts/Gilroy-Medium.eot');
+  src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Medium.woff') format('woff'),
+  url('../fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Semibold';
+  font-display: swap;
+  src: url('../fonts/Gilroy-SemiBold.eot');
+  src: url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+  url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  font-display: swap;
+  src: url('../fonts/Gilroy-Bold.eot');
+  src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin Regular {
+  font-family: 'Gilroy Regular', sans-serif;
+}
+
+@mixin Medium {
+  font-family: 'Gilroy Medium', sans-serif;
+}
+
+@mixin Semibold {
+  font-family: 'Gilroy Semibold', sans-serif;
+}
+
+@mixin Bold {
+  font-family: 'Gilroy Bold', sans-serif;
+}

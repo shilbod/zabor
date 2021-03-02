@@ -1,0 +1,54 @@
+.item-tick
+    font-size: 20px
+    +Medium
+    color: $dark
+    background-color: #ffffff
+    border-radius: $border-radius
+    padding: 20px 20px
+    padding-left: 65px
+    background-image: url(../img/check.png)
+    background-size: auto 30px
+    background-repeat: no-repeat
+    background-position: 20px 20px
+.tick-list
+    .row
+        padding-top: 30px
+        list-style-type: none
+        counter-reset: my-counter
+        li::before 
+            padding-left: 60px
+            font-size: 70px
+            height: 100%
+            +Bold
+            color: $color-el
+            line-height: 0
+            content: counter(my-counter) /* Выводим число */
+            counter-increment: my-counter /* Увеличиваем значение счётчика */
+            content: "0" counter(my-counter)
+    .tick-list-item
+        padding-left: 60px
+        background-image: url(../img/check.png)
+        background-size: auto 40px
+        background-repeat: no-repeat
+        .tick-list-title
+            margin-top: 10px
+            font-size: 24px
+            line-height: 1.1
+            +Semibold
+            margin-bottom: 10px
+        .tick-list-subtitle
+            +Medium
+.tick-list-tab
+    margin-top: 30px
+    width: 75%
+    .row
+        list-style-type: none
+        .tick-tab-item
+            padding-left: 40px
+            background-image: url(../img/check.png)
+            background-size: auto 25px
+            background-repeat: no-repeat
+            .tick-tab-title
+                font-size: 22px
+                +Medium
+

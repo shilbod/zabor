@@ -1,0 +1,37 @@
+.card-home
+    .row,
+    .card
+        height: 100%
+        border: none
+        border-radius: $border-radius
+    .card-body 
+        position: absolute
+        bottom: 0
+        padding: 20px 20px
+        z-index: 1
+        &:first-child
+            background: rgba($dark, 0.7)
+            top: 
+            bottom: auto
+            border-radius: $border-radius
+            padding: 15px 20px
+    .card-link
+        height: 100%
+    .main-card
+        .card-img
+            height: 460px
+    .main-card-2
+        height: 320px
+    .card-img
+        height: 100%
+        object-fit: cover
+        +transition
+        &:hover
+            filter: brightness(80%)
+            +transition
+    .card-title
+        color: #ffffff
+        +Semibold
+        font-size: 24px
+        margin-bottom: 0
+        border-radius: $border-radius

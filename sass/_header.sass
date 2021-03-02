@@ -1,0 +1,256 @@
+.mobile-sandwich,
+.messenger-mobile,
+.social-mobile-wrap,
+.phone-mobile-wrap
+        display: none
+.navbar-top
+    padding-top: 15px
+    padding-bottom: 15px
+    background-color: #ffffff
+    .row
+        width: 100%
+        position: relative
+        .btn-callback
+            padding-right: 0
+.navbar-brand
+    display: flex
+    flex-direction: column
+    font-size: 16px
+    +Medium
+    padding: 0
+    white-space: normal
+    img 
+        width: 180px
+        height: auto
+        margin-bottom: 5px
+.social-icon-wrap
+    display: flex
+    justify-content: flex-end
+.messenger-icon-wrap
+    display: flex
+    justify-content: flex-start
+    margin-bottom: 5px
+    font-size: 14px
+    line-height: 1.2
+    +Medium
+    div 
+        width: 110px
+        margin-right: 10px
+.time-work
+    font-size: 14px
+    line-height: 1.2
+    white-space: nowrap
+    +Medium
+.social-icon
+    width: 30px
+    height: auto
+    margin-right: 10px
+    &:last-child
+        margin-right: 0px
+.vk
+    &:before
+    content: url(../img/vk.svg)
+.fb
+    &:before
+    content: url(../img/facebook.svg)
+.inst
+    &:before
+    content: url(../img/instagram.svg)
+.vb
+    &:before
+    content: url(../img/viber.svg)
+.tg
+    &:before
+    content: url(../img/telegram.svg)
+.contacts-wrap 
+    display: flex
+    flex-direction: column
+    .contacts-icon
+        display: flex
+        justify-content: flex-start
+        padding-left: 30px
+        white-space: nowrap
+        text-decoration: none
+        font-size: 20px
+        line-height: 1.25
+        +Semibold
+        background-size: auto 20px
+        background-repeat: no-repeat
+        background-position: 0 center
+        &:hover
+            color: darken($color-el, 10%)
+    .a1
+        background-image: url(../img/a1.png)
+    .mts
+        background-image: url(../img/mts.png)
+.navbar-menu
+    background-color: $dark
+    &.collapse:not(.show)
+        display: block
+    .navbar 
+        padding: 0
+    .nav-item
+        &:hover
+            background-color: $color-el
+            .nav-link
+                color: $dark
+    .nav-link
+        padding: 20px 0px
+        color: #ffffff
+        font-size: 18px
+        line-height: 1
+        +Medium
+    .dropdown-menu
+        border-top-right-radius: 0
+        border-top-left-radius: 0
+        border: none
+    .dropdown-item
+        font-size: 18px
+        line-height: 1.2
+        padding: 8px 20px
+        +Medium
+        &:hover
+            background-color: $color-el
+
+@media (min-width: 1200px)
+    .dropdown:hover .dropdown-menu
+        display: block
+        +transition
+@media (max-width: 1399.98px)
+    .navbar-menu
+        .nav-link
+            font-size: 16px
+
+
+@media (max-width: 1199.98px)
+    .navbar
+        .row
+            .btn-callback
+                display: none
+            .phone-wrap
+                padding-right: 0
+    .navbar-brand
+        img 
+            width: 150px
+    .navbar-menu
+        .dropdown-item
+            font-size: 16px
+            padding: 5px 20px
+
+@media (max-width: 991.98px)
+    header
+        position: sticky
+        top: 0
+        z-index: 1020
+    .navbar
+        .phone-wrap
+            margin-right: 90px
+    .mobile-sandwich
+        position: absolute
+        display: block
+        height: 70px
+        right: 0
+        padding: 0
+        .navbar-toggler
+            padding: 0
+            border: 0
+    .navbar
+        padding-top: 10px
+        padding-bottom: 10px
+    .navbar-brand
+        font-size: 14px
+        img 
+            width: 120px
+    .navbar-menu
+        &.collapse:not(.show)
+            display: none
+    .menu-button
+        position: relative
+        width: 70px
+        height: 70px
+    .social-icon-wrap,
+    .messenger-icon-mobile
+        display: none
+    .navbar-menu
+        background-color: #ffffff
+        .nav-item
+            &:hover
+                background-color: #ffffff
+        .messenger-mobile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 15px
+        .social-mobile-wrap
+            display: flex
+            flex-direction: row
+            justify-content: center
+            padding-bottom: 30px
+        .navbar
+            flex-direction: column
+            padding: 20px 0px
+        .nav-link
+            font-size: 18px
+            color: $dark
+            padding: 10px 0px
+        .dropdown-toggle.show
+            background-color: $color-el
+            border-top-right-radius: $border-radius
+            border-top-left-radius: $border-radius
+        .dropdown-menu
+            position: relative
+            .dropdown-item
+                text-align: center
+        .dropdown-menu
+            transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s
+            max-height: 0
+            display: block
+            overflow: hidden
+            opacity: 0
+            visibility: hidden
+            padding: 0
+        .dropdown-menu.show
+            transition: max-height 0.3s, opacity 0.2s, visibility 0s
+            max-height: 520px
+            opacity: 1
+            visibility: visible
+            padding: 10px 0
+            border: 1px solid $color-el
+            border-top: none
+            border-bottom-right-radius: $border-radius
+            border-bottom-left-radius: $border-radius
+
+@media (max-width: 767.98px)
+    .navbar
+        .phone-wrap
+            margin-right: 70px
+        .mobile-sandwich
+            height: 60px
+    .contacts-wrap .contacts-icon
+        font-size: 18px
+        background-size: auto 15px
+        padding-left: 25px
+    .menu-button
+        width: 60px
+        height: 60px
+
+@media (max-width: 575.98px)
+    .navbar
+        .row
+            position: inherit
+        .phone-wrap
+            display: none
+        .mobile-sandwich
+            top: 0
+            height: 64px
+    .navbar-menu
+        .navbar
+            padding: 10px 0px
+        .phone-mobile-wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 15px
+    .menu-button
+        width: 64px
+        height: 64px

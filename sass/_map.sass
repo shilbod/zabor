@@ -1,0 +1,66 @@
+.map-wrap
+    height: 80vh
+.map-info
+    width: 40%
+    position: absolute
+    background-color: #ffffff
+    border-radius: $border-radius
+    padding: 40px
+    top: 50%
+    transform: translateY(-50%)
+    .section-title
+        width: 100%
+        text-align: left
+    .contacts-point
+        font-size: 20px
+        +Medium
+        padding-left: 40px
+        background-image: url(../img/point.png)
+        background-size: auto 25px
+        background-repeat: no-repeat
+    .contacts-form
+        width: 100%
+        margin-top: 0px
+        .col
+            &:first-child
+                border-right: none
+        .contacts-form-text
+            color: $dark
+            &.form-text-call
+                background-image: url(../img/phone-call-3.png)
+        .contacts-wrap
+            .contacts-icon
+                color: $dark
+                +transition
+                &:hover
+                    color: $color-el
+                    +transition
+        .messenger-icon-wrap
+            .social-icon
+                width: 30px
+        .social-icon-wrap
+            justify-content: normal
+
+@media (max-width: 1399.98px)
+    .map-info
+        width: 42%
+
+@media (max-width: 991.98px)
+    .map-info
+        width: 100%
+        position: relative
+        transform: translateY(0)
+        padding: 0
+        margin-bottom: 30px
+        .section-title
+            text-align: center
+        .contacts-form 
+            .col
+                display: flex
+                flex-direction: column
+                div
+                    margin-left: auto
+                    margin-right: auto
+                &:last-child
+                    flex-direction: row
+                    justify-content: center

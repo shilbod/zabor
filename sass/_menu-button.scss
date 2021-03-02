@@ -1,0 +1,73 @@
+svg {
+  height: 100%;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.plate {
+  height: 100%;
+  width: 100%;
+}
+.burger {
+  filter: url(#gooeyness);
+}
+.x {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.line {
+  fill: none;
+  stroke: $dark;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.x .line {
+  stroke-width: 4px;
+}
+/* First plate */
+.plate1 .line2 {
+  stroke-dasharray: 40 200;
+  stroke-dashoffset: 0px;
+}
+.plate1 .line3 {
+  stroke-dasharray: 40 179;
+  stroke-dashoffset: 0px;
+}
+.plate.active {
+  background-color: $dark;
+  // transition: $transition-all;
+}
+.active .line {
+  stroke: #fff;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+.active.plate1 .line1 {
+  transform: scale(0, 1);
+  transition: transform 500ms 100ms;
+}
+.active.plate1 .line2 {
+  stroke-dasharray: 5px 200;
+  stroke-dashoffset: -164px;
+}
+.active.plate1 .line3 {
+  stroke-dasharray: 5px 179;
+  stroke-dashoffset: -142px;
+}
+.active .x {
+  transform: scale(1);
+  transition: transform 400ms 350ms;
+}
+@media (max-width: 767.98px) {
+  svg {
+    width: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  svg {
+    width: 64px;
+  }
+}

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заборы</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <div class="nav-wrap">
+        <nav class="navbar navbar-top ">
+        <div class="container">
+            <div class="row m-0 gx-xl-4 gx-3 gx-xxl-5 align-items-center justify-content-between">
+              <div class="col-auto flex-fill p-0">
+                <a class="navbar-brand" href="#">
+                  <img src="/img/logo.png" alt="" class="logo">
+                  Строительство заборов под ключ
+                </a>
+              </div>
+                <div class="col-auto social-icon-wrap">
+                  <a class="social-icon vk" href=""></a>
+                  <a class="social-icon fb" href=""></a>
+                  <a class="social-icon inst" href=""></a>
+                </div>
+                <div class="col-auto messenger-icon-mobile">
+                    <div class="col messenger-icon-wrap">
+                        <div>Задайте вопрос напрямую в:</div>
+                        <a class="social-icon vb" href=""></a>
+                        <a class="social-icon tg" href=""></a>
+                    </div>
+                    <div class="time-work">Ежедневно с 08:00 до 20.00</div>
+                </div>
+                <div class="col-auto phone-wrap">
+                    <div class="col contacts-wrap">
+                        <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                        <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                    </div>
+                </div>
+                <div class="col-auto btn-callback">
+                    <button type="button" class="btn">Заказать звонок</button>
+                </div>
+                <div class="col-auto mobile-sandwich">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu-button">
+                      <div class="plate plate1" onclick="this.classList.toggle('active')">
+                        <svg class="burger" version="1.1" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 30,65 H 70"></path>
+                            <path class="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"></path>
+                            <path class="line line3" d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"></path>
+                        </svg>
+                        <svg class="x" version="1.1" viewBox="0 0 100 100">
+                            <path class="line" d="M 34,32 L 66,68"></path>
+                            <path class="line" d="M 66,32 L 34,68"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar-menu collapse" id="navbarSupportedContent">
+          <div class="container">              
+              <ul class="navbar nav nav-fill">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Каталог заборов</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Модульный забор без фундамента</a></li>
+                        <li><a class="dropdown-item" href="#">Забор Брик</a></li>
+                        <li><a class="dropdown-item" href="#">Забор Бессер</a></li>
+                        <li><a class="dropdown-item" href="#">Забор из профнастила</a></li>
+                        <li><a class="dropdown-item" href="#">Забор из штакетника металлического</a></li>
+                        <li><a class="dropdown-item" href="#">Деревянные заборы</a></li>
+                        <li><a class="dropdown-item" href="#">Забор жалюзи</a></li>
+                        <li><a class="dropdown-item" href="#">Забор ДПК</a></li>
+                        <li><a class="dropdown-item" href="#">Забор из Евросетки</a></li>
+                        <li><a class="dropdown-item" href="#">Деревянные заборы</a></li>
+                        <li><a class="dropdown-item" href="#">Кованный забор</a></li>
+                        <li><a class="dropdown-item" href="#">Горизонтальные заборы</a></li>
+                      </ul>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">Ворота и калитка</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Откатные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Распашные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Гаражные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Ролетные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Калитка</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">Благоустройство</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Укладка Плитки</a></li>
+                      <li><a class="dropdown-item" href="#">Устройство газона</a></li>
+                      <li><a class="dropdown-item" href="#">Монтаж террасной доски</a></li>
+                      <li><a class="dropdown-item" href="#">Навесы</a></li>
+                      <li><a class="dropdown-item" href="#">Вольеры</a></li>
+                      <li><a class="dropdown-item" href="#">Дровница</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">Материалы</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Металлопрофиль</a></li>
+                      <li><a class="dropdown-item" href="#">Штакетник металлический</a></li>
+                      <li><a class="dropdown-item" href="#">Евросетка</a></li>
+                      <li><a class="dropdown-item" href="#">Столбы для забора</a></li>
+                      <li><a class="dropdown-item" href="#">Доска ДПК для Забора</a></li>
+                      <li><a class="dropdown-item" href="#">Доска ДПК для терассы</a></li>
+                      <li><a class="dropdown-item" href="#">Комплектующие для ворот откатных</a></li>
+                      <li><a class="dropdown-item" href="#">Автоматика для откатных ворот</a></li>
+                      <li><a class="dropdown-item" href="#">Блоки для забора</a></li>
+                      <li><a class="dropdown-item" href="#">Комплектующие для калитки</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Фото готовых объектов</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#" >Статьи</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#" >Контакты</a>
+                  </li>
+              </ul>
+              <div class="col-auto phone-mobile-wrap">
+                <div class="col contacts-wrap">
+                    <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                    <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                </div>
+            </div>
+              <div class="messenger-mobile">
+                <div class="col messenger-icon-wrap">
+                    <div>Задайте вопрос напрямую в:</div>
+                    <a class="social-icon vb" href=""></a>
+                    <a class="social-icon tg" href=""></a>
+                </div>
+                <div class="time-work">Ежедневно с 08:00 до 20.00</div>
+              </div>
+              <div class="social-mobile-wrap">
+                <a class="social-icon vk" href=""></a>
+                <a class="social-icon fb" href=""></a>
+                <a class="social-icon inst" href=""></a>
+              </div>
+          </div>
+        <!-- /.container -->
+        </nav>
+      </div>
+    </header>
+    <main>
+        <section>
+            <div class="main-slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/brick4.jpg" class="w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption ">
+                                <h1 class="title-carousel">Забор из профнастила, цена от 42 руб. за метр под ключ</h1>
+                                <div class="description-carousel">Забор из металлопрофиля (Профлиста) с установкой в Минске под ключ по самым выгодным ценам! Скидки до 20 %, Гарантия до 25 лет.</div>
+                                <a href="" class="btn btn-main">Подробнее</a>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/brick4.jpg" class="w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/brick4.jpg" class="w-100" alt="...">
+                      </div>
+                    </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </button>
+                  </div>
+            </div>
+            <!-- /.main-slider -->
+        </section>
+        <section class="section-padding">
+          <div class="container">
+            <h3 class="section-title">Каталог заборов, ворот, плитки</h3>
+            <div class="tabs-wrap">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#catalog-zabor" type="button" role="tab" aria-controls="home" aria-selected="true">Каталог заборов</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#catalog-vorota" type="button" role="tab" aria-controls="profile" aria-selected="false">Ворота и калитки</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-blag" type="button" role="tab" aria-controls="contact" aria-selected="false">Благоустройство</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-mater" type="button" role="tab" aria-controls="contact" aria-selected="false">Материалы</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content card-home" id="myTabContent">
+                    <div class="tab-pane fade show active" id="catalog-zabor" role="tabpanel" aria-labelledby="home-tab">
+                      <div class="row gy-4 gx-4 row-cols-2">
+                        <div class="col col-8">
+                          <div class="card main-card">
+                            <a href="#" class="card-link">
+                              <div class="card-body">
+                                <h4 class="card-title">Еврозабор NEW</h4>
+                              </div>
+                              <div class="label-in-stock">В наличии</div>
+                              <img src="img/derevo-lending1.jpg" class="card-img" alt="...">
+                              <div class="card-body">
+                                <a href="#" class="btn btn-main-card">Подробнее</a>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col col-4">
+                          <div class="row row-cols-1">
+                            <div class="col mb-4">
+                                <div class="card">
+                                  <a href="" class="card-link">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Забор Брик</h4>
+                                    </div>
+                                    <img src="img/derevo-lending1.jpg" class="card-img" alt="...">
+                                    <div class="card-body">
+                                      <a href="#" class="btn btn-main-card">Подробнее</a>
+                                    </div>
+                                  </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                  <a href="" class="card-link">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Забор из бессера</h4>
+                                    </div>
+                                    <img src="img/derevo-lending1.jpg" class="card-img" alt="...">
+                                    <div class="card-body">
+                                      <a href="#" class="btn btn-main-card">Подробнее</a>
+                                    </div>
+                                  </a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card main-card-2">
+                            <a href="" class="card-link">
+                              <div class="card-body">
+                                <h4 class="card-title">Забор из мет. штакетника</h4>
+                              </div>
+                              <img src="img/derevo-lending1.jpg" class="card-img" alt="...">
+                              <div class="card-body">
+                                <a href="#" class="btn btn-main-card">Подробнее</a>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card main-card-2">
+                            <a href="" class="card-link">
+                              <div class="card-body">
+                                <h4 class="card-title">Забор из профнастила</h4>
+                              </div>
+                              <img src="img/derevo-lending1.jpg" class="card-img" alt="...">
+                              <div class="card-body">
+                                <a href="#" class="btn btn-main-card">Подробнее</a>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="" class="btn btn-big mt-4">Перейти в каталог заборов</a>
+                    </div>
+                    <div class="tab-pane fade" id="catalog-blag" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane fade" id="catalog-vorota" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    <div class="tab-pane fade" id="catalog-mater" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                  </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-padding sec-gray work-man">
+          <div class="container">
+            <div class="why-about">
+              <h3 class="section-title why-about">Почему выбирают нашу компанию</h3>
+              <div class="section-description">Наша компания уже на протяжении 7 лет занимается продажей и последующей установкой заборов из различных материалов. Мы рады приветствовать Вас на нашем сайте! Если вам необходимо купить забор в Минске, который будет радовать не только Вас, но еще и Ваших внуков, или приобрести необходимые для него материалы – с удовольствием поможем Вам. Наша компания предлагает самый большой и разнообразный выбор в данном профиле.</div>
+              <div class="tick-list">
+                <ol class="row gy-5 row-cols-3">
+                  <li class="col">
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Работы любой сложности</div>
+                      <div class="tick-list-subtitle">Монтаж заборов и благоустройство участков под ключ.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Опытные прорабы</div>
+                      <div class="tick-list-subtitle">Прорабы с опытом работы не менее 10 лет контролируют работу на каждом этапе.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">5 собственных бригад</div>
+                      <div class="tick-list-subtitle">Опытные профильные рабочие обладающие знаниями и всем необходимым инструментом.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Бесплатный замер</div>
+                      <div class="tick-list-subtitle">Выезд в заранее согласованный день и время.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Обязательное заключение договора</div>
+                      <div class="tick-list-subtitle">Строгое соблюдение сроков и условий договора.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">100% гарантия</div>
+                      <div class="tick-list-subtitle">Гарантия до 10-ти лет на работы и материалы.</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="section-padding">
+          <div class="container">
+            <h3 class="section-title">Посмотрите некоторые наши работы</h3>
+            <div class="tabs-wrap">
+              <ul class="nav nav-tabs nav-fill main-gallery-tab" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="zabor-brick-tab" data-bs-toggle="tab" data-bs-target="#zabor-brick" type="button" role="tab" aria-controls="zabor-brick" aria-selected="true">Забор Брик</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="zabor-besser-tab" data-bs-toggle="tab" data-bs-target="#zabor-besser" type="button" role="tab" aria-controls="zabor-besser" aria-selected="false">Забор Бессер</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-blag" type="button" role="tab" aria-controls="contact" aria-selected="false">Деревянные заборы</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-mater" type="button" role="tab" aria-controls="contact" aria-selected="false">Забор из профнастила</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-blag" type="button" role="tab" aria-controls="contact" aria-selected="false">Откатные ворота</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-mater" type="button" role="tab" aria-controls="contact" aria-selected="false">Калитки</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-blag" type="button" role="tab" aria-controls="contact" aria-selected="false">Гаражные ворота</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#catalog-mater" type="button" role="tab" aria-controls="contact" aria-selected="false">Навесы</button>
+                  </li>
+                </ul>
+                <div class="tab-content gallery" id="myTabContent">
+                  <div class="tab-pane fade show active" id="zabor-brick" role="tabpanel" aria-labelledby="zabor-brick">
+                    <div class="row gy-3 gx-3"> 
+                      <div class="col-lg-3 col-md-4 col-6 ">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="zabor-besser" role="tabpanel" aria-labelledby="zabor-besser">
+                    <div class="row gy-3 gx-3"> 
+                      <div class="col-lg-3 col-md-4 col-6 ">
+                        <a data-fancybox="gallery" href="img/derevo-lending1.jpg">
+                          <img class="img-gallery" src="img/derevo-lending1.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/derevo-lending1.jpg">
+                          <img class="img-gallery" src="img/derevo-lending1.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/derevo-lending1.jpg">
+                          <img class="img-gallery" src="img/derevo-lending1.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/derevo-lending1.jpg">
+                          <img class="img-gallery" src="img/derevo-lending1.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/derevo-lending1.jpg">
+                          <img class="img-gallery" src="img/derevo-lending1.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a data-fancybox="gallery" href="img/brick4.jpg">
+                          <img class="img-gallery" src="img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="catalog-vorota" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                  <div class="tab-pane fade" id="catalog-mater" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="section-padding section-form">
+          <div class="container">
+            <h3 class="section-title">Получите расчёт заявки в течении 5 минут</h3>
+            <div class="section-subtitle">Заполните форму и мы перезвоним вам и сориентирую по стоимости</div>
+            <div class="forms-wrap">
+                <form>
+                  <div class="row">
+                    <div class="col-4">
+                      <input class="form-control form-input" data-name="name" type="text" name="Имя" maxlength="30" placeholder="Ваше имя" required="">
+                    </div>
+                    <div class="col-4">
+                      <input class="form-control form-input" id="phone" data-name="phone" type="text" name="Номер телефона" maxlength="19" placeholder="+375 29 123 45 67" required="">
+                    </div>
+                    <div class="col-4">
+                      <button type="submit" class="btn btn-form">Отправить заявку</button>
+                    </div>
+                  </div>
+                  <div class="form-policy">«Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности»</div>
+                </form>
+            </div>
+            <div class="contacts-form">
+              <div class="row gx-5 justify-content-center">
+                <div class="col col-lg-4 col-xl-4">
+                  <div class="contacts-form-text form-text-call">Звоните по телефону 8:00 до 20:00, ежедневно</div>
+                  <div class="contacts-wrap">
+                    <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                    <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                  </div>
+                </div>
+                <div class="col col-lg-4 col-xl-4">
+                  <div class="contacts-form-text form-text-messenger">или оставьте заявку через Viber или Telegram</div>
+                  <div class="messenger-icon-wrap">
+                    <a class="social-icon vb" href=""></a>
+                    <a class="social-icon tg" href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="section-padding sec-gray section-about">
+          <div class="container">
+              <img class="img-about" src="img/about.png" alt="">
+              <h3 class="section-title">О нашей компании</h3>
+              <div class="section-subtitle">Не можете определиться с забором? Не знаете, кому доверить его установку? Мы знает, что нужно делать!</div>
+              <div class="row">
+                <div class="col col-6">
+                  <div class="col-10 about-description"><span>Мы занимаемся производством и установкой заборов «под ключ» уже 6 лет, и количество положительных отзывов растет с каждым днем, убедитесь сами!</span><br><br>
+                    Кроме того, с такой же динамикой растет и количество выгодных предложений, акций и скидок, которые Вы можете получить, заказывая забор у нас!<br><br>
+                    Специалисты с многолетним стажем и немалым опытом в области строительства знают своё дело и выполнят любую, даже самую кропотливую работу грамотно и качественно, а главное быстро!
+                  </div>
+                  <a href="" class="btn btn-main">Подробнее о нашей компании</a>
+                </div>
+              </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="section-padding section-step">
+          <div class="container">
+            <h3 class="section-title">Свяжитесь с нами или оставьте завку и мы поможем с выбором и рассчитаем стоимость по телефону уже через 5 минут</h3>
+            <div class="tabs-wrap">
+              <ul class="nav nav-tabs nav-fill main-step-tab" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="step-1-tab" data-bs-toggle="tab" data-bs-target="#step-1" type="button" role="tab" aria-controls="step-1" aria-selected="true">1. Проконсультируем</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step-2-tab" data-bs-toggle="tab" data-bs-target="#step-2" type="button" role="tab" aria-controls="step-2" aria-selected="false">2. Бесплатный замер</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step-3-tab" data-bs-toggle="tab" data-bs-target="#step-3" type="button" role="tab" aria-controls="step-3" aria-selected="false">3. Подписание договора</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step-4-tab" data-bs-toggle="tab" data-bs-target="#step-4" type="button" role="tab" aria-controls="step-4" aria-selected="false">4. Изготовление и доставка</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step-5-tab" data-bs-toggle="tab" data-bs-target="#step-5" type="button" role="tab" aria-controls="step-5" aria-selected="false">5. Быстрый монтаж</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step-6-tab" data-bs-toggle="tab" data-bs-target="#step-6" type="button" role="tab" aria-controls="step-6" aria-selected="false">6. Принятие работы</button>
+                  </li>
+                </ul>
+                <div class="tab-content step-tab" id="myTabContent">
+                  <div class="tab-pane fade show active" id="step-1" role="tabpanel" aria-labelledby="step-1">
+                    <div class="forms-wrap">
+                      <form>
+                        <div class="row">
+                          <div class="title-form-step"><span>Заполните форму</span> - мы перезвоним в течении 5 минут и проконсультируем Вас по всем вопросам</div>
+                          <div class="col">
+                            <input class="form-control form-input" id="phone" data-name="phone" type="text" name="Номер телефона" maxlength="19" placeholder="+375 29 123 45 67" required="">
+                          </div>
+                          <div class="col">
+                            <button type="submit" class="btn btn-form">Отправить заявку</button>
+                          </div>
+                        </div>
+                        <div class="form-policy">«Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности»</div>
+                      </form>
+                    </div>
+                    <div class="contacts-form">
+                      <div class="row gx-5 justify-content-center" >
+                        <div class="col col-6">
+                          <div class="contacts-form-text form-text-call">Звоните по телефону 8:00 до 20:00, ежедневно</div>
+                          <div class="contacts-wrap">
+                            <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                            <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                          </div>
+                        </div>
+                        <div class="col col-6">
+                          <div class="contacts-form-text form-text-messenger">или оставьте заявку через Viber или Telegram</div>
+                          <div class="messenger-icon-wrap">
+                            <a class="social-icon vb" href=""></a>
+                            <a class="social-icon tg" href=""></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="step-2" role="tabpanel" aria-labelledby="step-2">
+                    <div class="step-tab-title">Бесплатный выезд замерщика в удобное для Вас время</div>
+                    <div class="tick-list-tab">
+                      <ol class="row gy-3 row-cols-2">
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Составление замерного листа</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Изучение грунта</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Консультация по Вашим параметрам</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Презентация образцов материала</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Составление карты высот</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Подбор забора с учетом Ваших пожеланий</div>
+                          </div>
+                        </li>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="step-3" role="tabpanel" aria-labelledby="step-3">
+                    <div class="step-tab-title">Заключение договора на месте либо в офисе</div>
+                    <div class="step-tab-subtitle">Этапы перед подписание:</div>
+                    <div class="tick-list-tab">
+                      <ol class="row gy-3 row-cols-2">
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Составление работ</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Уточнение деталей по проекту</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Согласование сроков работ</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Презентация образцов материала</div>
+                          </div>
+                        </li>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="step-4" role="tabpanel" aria-labelledby="step-4">
+                    <div class="step-tab-title">Изготовление и быстрая доставка</div>
+                    <div class="step-tab-subtitle">В любую точку Минской области</div>
+                    <div class="tick-list-tab">
+                      <ol class="row gy-3 row-cols-2">
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Полное информирование о этапах доставки, от выезда до прибытия</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Бесплатная разгрузка материалов на Ваш участок</div>
+                          </div>
+                        </li>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="step-5" role="tabpanel" aria-labelledby="step-5">
+                    <div class="step-tab-title">Монтаж забора и доп. конструкций</div>
+                    <div class="step-tab-subtitle">Установка забора до 100 метров за один день</div>
+                    <div class="tick-list-tab">
+                      <ol class="row gy-3 row-cols-2">
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Полное информирование о этапах доставки, от выезда до прибытия</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Монтаж забора<br>
+                              Монтаж ворот<br>
+                              Монтаж калиток<br>
+                              Уборка и вывоз мусора</div>
+                          </div>
+                        </li>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="step-6" role="tabpanel" aria-labelledby="step-6">
+                    <div class="step-tab-title">Бесплатный выезд замерщика в удобное для Вас время</div>
+                    <div class="tick-list-tab">
+                      <ol class="row gy-3 row-cols-2">
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Согласовываем все сделанные работы</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Даем расширенную гарантию</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <div class="tick-tab-item">
+                            <div class="tick-tab-title">Консультируем по обслуживанию</div>
+                          </div>
+                        </li>
+                        <li class="col">
+                          <a href="" class="btn btn-main">Оставить заявку</a>
+                        </li>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="section-padding-bottom">
+          <div class="container">
+            <h3 class="section-title">Какой забор приобрести в Минске</h3>
+            <div class="section-text">Забор – это первое, что привлекает внимание ваших гостей и посетителей, поэтому так важно подобрать подходящий по цене и стилю вариант. Правильно выбранная конструкция должна вписаться в стиль сада и дома, дополнить его.<br><br>
+
+              Для возведения этой конструкции в Минске и всей Беларуси предлагается множество материалов по разным ценам, фото которых вы найдете на нашем сайте. Одни из материалов стоят недорого, другие обойдутся отнюдь не дешево. Прежде чем купить забор в Минске, нужно определиться, какая из трех основных функций для вас имеет больший приоритет:
+              <br><br>
+              <ol>
+                <li>Определение границ участка;</li>
+                <li>Защита дома и прилегающей территории;</li>
+                <li>Придание эстетичности и красоты участку.</li>
+              </ol>
+              <br>
+              Покупая материал для забора в Минске или заказывая готовое ограждение по выгодной цене, следует исходить из того, какая из перечисленных выше функций в данном случае для Вас более важна. У нас можно заказать забор, цена и качество которого Вас порадуют!</div>
+          </div>
+        </section>
+        <section class="section-map">
+          <div class="container">
+            <div class="map-info">
+              <h3 class="section-title">Наши контакты</h3>
+              <div class="contacts-form">
+                <div class="row gy-3 row-cols-1">
+                  <div class="col">
+                    <div class="contacts-point">Минский р-он, п.Колодищи, ул. Молокович 29</div>
+                  </div>
+                  <div class="col">
+                    <div class="contacts-form-text form-text-call">Звоните по телефону 8:00 до 20:00, ежедневно</div>
+                    <div class="contacts-wrap">
+                      <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                      <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="contacts-form-text form-text-messenger">или оставьте заявку через Viber или Telegram</div>
+                    <div class="messenger-icon-wrap">
+                      <a class="social-icon vb" href=""></a>
+                      <a class="social-icon tg" href=""></a>
+                    </div>
+                  </div>
+                  <div class="col social-icon-wrap">
+                    <a class="social-icon vk" href=""></a>
+                    <a class="social-icon fb" href=""></a>
+                    <a class="social-icon inst" href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="map" class="map-wrap">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae82b06f46680feaa0cc17b449b1bd7ceca306e9eec9ebebc16e47bfa10a0c47e&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="footer-wrap">
+              <div class="accordion">
+                <div class="row gy-3 row-cols-1">
+                  <div class="col">
+                    <a class="navbar-brand" href="#">
+                      <img src="/img/logo.png" alt="" class="logo">
+                      Строительство заборов под ключ
+                    </a>
+                    <div class="accordion-item catalog-item-wrap">
+                      <div class="accordion-header catalog-header">
+                        <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" >
+                          Компания
+                        </a>
+                      </div>
+                      <div id="collapse1" class="accordion-collapse collapse">
+                        <ul class="accordion-body">
+                          <li><a class="catalog-item" href="#">О нас</a></li>
+                          <li><a class="catalog-item" href="#">Фото готовых объектов</a></li>
+                          <li><a class="catalog-item" href="#">Отзывы</a></li>
+                          <li><a class="catalog-item" href="#">Статьи</a></li>
+                          <li><a class="catalog-item" href="#">Контакты</a></li>
+                          <li><a class="catalog-item" href="#">Карта сайта</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="accordion-item catalog-item-wrap">
+                      <div class="accordion-header catalog-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                          Каталог заборов
+                        </button>
+                      </div>
+                      <div id="collapse2" class="accordion-collapse collapse">
+                        <ul class="accordion-body">
+                          <li><a class="catalog-item" href="#">Модульный забор без фундамента</a></li>
+                          <li><a class="catalog-item" href="#">Забор Брик</a></li>
+                          <li><a class="catalog-item" href="#">Забор Бессер</a></li>
+                          <li><a class="catalog-item" href="#">Забор из профнастила</a></li>
+                          <li><a class="catalog-item" href="#">Забор из штакетника металлического</a></li>
+                          <li><a class="catalog-item" href="#">Деревянные заборы</a></li>
+                          <li><a class="catalog-item" href="#">Забор жалюзи</a></li>
+                          <li><a class="catalog-item" href="#">Забор ДПК</a></li>
+                          <li><a class="catalog-item" href="#">Забор из Евросетки</a></li>
+                          <li><a class="catalog-item" href="#">Деревянные заборы</a></li>
+                          <li><a class="catalog-item" href="#">Кованный забор</a></li>
+                          <li><a class="catalog-item" href="#">Горизонтальные заборы</a></li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                  <div class="accordion-item catalog-item-wrap">
+                    <div class="accordion-header catalog-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                        Ворота и калитки
+                      </button>
+                    </div>
+                    <div id="collapse3" class="accordion-collapse collapse">
+                      <ul class="accordion-body">
+                        <li><a class="catalog-item" href="#">Откатные ворота</a></li>
+                        <li><a class="catalog-item" href="#">Распашные ворота</a></li>
+                        <li><a class="catalog-item" href="#">Гаражные ворота</a></li>
+                        <li><a class="catalog-item" href="#">Ролетные ворота</a></li>
+                        <li><a class="catalog-item" href="#">Калитка</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="accordion-item catalog-item-wrap">
+                      <div class="accordion-header catalog-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                          Благоустройство
+                        </button>
+                      </div>
+                      <div id="collapse4" class="accordion-collapse collapse">
+                        <ul class="accordion-body">
+                          <li><a class="catalog-item" href="#">Укладка Плитки</a></li>
+                          <li><a class="catalog-item" href="#">Устройство газона</a></li>
+                          <li><a class="catalog-item" href="#">Монтаж террасной доски</a></li>
+                          <li><a class="catalog-item" href="#">Навесы</a></li>
+                          <li><a class="catalog-item" href="#">Вольеры</a></li>
+                          <li><a class="catalog-item" href="#">Дровница</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="accordion-item catalog-item-wrap">
+                      <div class="accordion-header catalog-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                          Материалы
+                        </button>
+                      </div>
+                      <div id="collapse5" class="accordion-collapse collapse">
+                        <ul class="accordion-body">
+                          <li><a class="catalog-item" href="#">Металлопрофиль</a></li>
+                          <li><a class="catalog-item" href="#">Штакетник металлический</a></li>
+                          <li><a class="catalog-item" href="#">Евросетка</a></li>
+                          <li><a class="catalog-item" href="#">Столбы для забора</a></li>
+                          <li><a class="catalog-item" href="#">Доска ДПК для Забора</a></li>
+                          <li><a class="catalog-item" href="#">Доска ДПК для терассы</a></li>
+                          <li><a class="catalog-item" href="#">Комплектующие для ворот откатных</a></li>
+                          <li><a class="catalog-item" href="#">Автоматика для откатных ворот</a></li>
+                          <li><a class="catalog-item" href="#">Блоки для забора</a></li>
+                          <li><a class="catalog-item" href="#">Комплектующие для калитки</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copy">
+            <div class="container">
+              Copyright 2021. Все права защищены.
+            </div>
+          </div>
+        </footer>
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
