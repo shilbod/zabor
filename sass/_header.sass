@@ -2,7 +2,7 @@
 .messenger-mobile,
 .social-mobile-wrap,
 .phone-mobile-wrap
-        display: none
+    display: none
 .navbar-top
     padding-top: 15px
     padding-bottom: 15px
@@ -141,27 +141,30 @@
     header
         position: sticky
         top: 0
-        z-index: 1020
+        z-index: 1050
     .navbar
+        padding-top: 0
+        padding-bottom: 0
+        &.navbar-top
+            height: 70px
+            .container
+                padding-right: 0
         .phone-wrap
-            margin-right: 90px
+            margin-right: 20px
     .mobile-sandwich
-        position: absolute
         display: block
         height: 70px
-        right: 0
         padding: 0
         .navbar-toggler
             padding: 0
             border: 0
-    .navbar
-        padding-top: 10px
-        padding-bottom: 10px
     .navbar-brand
         font-size: 14px
         img 
             width: 120px
     .navbar-menu
+        position: absolute
+        width: 100%
         &.collapse:not(.show)
             display: none
     .menu-button
@@ -222,9 +225,12 @@
 
 @media (max-width: 767.98px)
     .navbar
+        &.navbar-top
+            height: 60px
         .phone-wrap
-            margin-right: 70px
+            margin-right: 10px
         .mobile-sandwich
+            top: 0
             height: 60px
     .contacts-wrap .contacts-icon
         font-size: 18px
@@ -236,13 +242,28 @@
 
 @media (max-width: 575.98px)
     .navbar
-        .row
-            position: inherit
+        &.navbar-top
+            .row
+                flex-wrap: nowrap
+        .navbar-brand
+            font-size: 10px
+            line-height: 1
+            margin: 0
         .phone-wrap
-            display: none
-        .mobile-sandwich
-            top: 0
-            height: 64px
+            margin-right: 0
+            .contacts-wrap
+                position: relative
+            .mts
+                display: none
+            .a1 
+                font-size: 0
+                width: 60px
+                height: 60px
+                background-color: $color-el
+                background-image: url(../img/phone-icon.png)
+                background-repeat: no-repeat
+                background-size: auto 25px
+                background-position: center
     .navbar-menu
         .navbar
             padding: 10px 0px
@@ -251,6 +272,3 @@
             flex-direction: column
             align-items: center
             margin-bottom: 15px
-    .menu-button
-        width: 64px
-        height: 64px

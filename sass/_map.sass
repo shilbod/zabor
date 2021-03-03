@@ -8,6 +8,10 @@
     padding: 40px
     top: 50%
     transform: translateY(-50%)
+    .messenger-icon-wrap
+        margin-bottom: 0 
+    .social-icon-wrap
+        margin-top: 10px
     .section-title
         width: 100%
         text-align: left
@@ -46,12 +50,18 @@
         width: 42%
 
 @media (max-width: 991.98px)
+    .map-wrap
+        height: 40vh
     .map-info
         width: 100%
         position: relative
         transform: translateY(0)
         padding: 0
         margin-bottom: 30px
+        .form-text-messenger
+            text-align: center
+        .social-icon-wrap
+            margin-top: 10px
         .section-title
             text-align: center
         .contacts-form 
@@ -64,3 +74,11 @@
                 &:last-child
                     flex-direction: row
                     justify-content: center
+
+@media (max-width: 767.98px)
+    .map-wrap
+        height: 320px
+    .map-info
+        .contacts-point,
+        .contacts-form-text
+            font-size: 18px

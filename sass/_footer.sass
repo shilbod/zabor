@@ -54,21 +54,29 @@ footer
 @media (max-width: 991.98px)
     footer
         .footer-wrap
+            padding: 30px 0
         .col
             width: 100%
             flex-shrink: 0
         .collapse:not(.show)
             display: none
         .navbar-brand
+            text-align: center
+            img
+                margin: auto
+                margin-bottom: 5px
         .accordion-collapse
             border: 0
         .catalog-header
             .accordion-button
+                padding: 0
                 &[data-bs-toggle="collapse"]
                     pointer-events: auto
                 &::after
                     background-image: url(../img/down-arrow.png)
                     display: block
+        .accordion-body
+            margin-top: 10px
 
 @media (max-width: 767.98px)
-    footer
+    footer 

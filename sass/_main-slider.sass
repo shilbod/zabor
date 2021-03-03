@@ -23,6 +23,8 @@
             position: relative
             top: 50%
             transform: translateY(-50%)
+            object-fit: cover
+            height: stretch
     .description-carousel
         font-size: 24px
         +Medium
@@ -38,3 +40,49 @@
             width: 60%
             top: 40%
             transform: translateY(-40%)
+
+@media (max-width: 1199.98px)
+    .main-slider
+        .carousel-control-next, .carousel-control-prev
+            width: 10%
+        .carousel-item
+            height: 70vh
+        .carousel-caption
+            width: 75%
+            top: 40%
+            right: 0
+            left: 0
+            transform: translateY(-40%)
+        .description-carousel
+            font-size: 22px
+
+@media (max-width: 991.98px)
+    .main-slider
+        .carousel-item
+            height: 50vh
+        .carousel-caption
+            width: 70%
+            top: 40%
+            transform: translateY(-40%)
+        .description-carousel
+            font-size: 20px
+
+@media (max-width: 767.98px)
+    .main-slider
+        .carousel-item
+            height: 60vh
+        .carousel-caption
+            width: 80%
+            top: 40%
+            transform: translateY(-40%)
+        .description-carousel
+            font-size: 18px
+            margin: 20px 0
+
+@media (max-width: 575.98px)
+    .main-slider
+        .carousel-item
+            height: 80vh
+        .carousel-caption
+            top: 30%
+            transform: translateY(-30%)
