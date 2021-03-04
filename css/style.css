@@ -2081,6 +2081,7 @@ section .why-about .section-title {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 1030;
 }
 
 .map-info .messenger-icon-wrap {
