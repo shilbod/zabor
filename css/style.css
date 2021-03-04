@@ -598,11 +598,6 @@ h1 {
     top: 0;
     height: 60px;
   }
-  .contacts-wrap .contacts-icon {
-    font-size: 18px;
-    background-size: auto 15px;
-    padding-left: 25px;
-  }
   .menu-button {
     width: 60px;
     height: 60px;
@@ -978,6 +973,12 @@ svg {
     font-family: 'Gilroy Semibold', sans-serif;
     margin-bottom: 10px;
   }
+  .tick-list-tab {
+    width: 100%;
+  }
+  .tick-list-tab .row .tick-tab-item .tick-tab-title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -994,6 +995,16 @@ svg {
   }
   .tick-list .tick-list-item .tick-list-subtitle {
     font-size: 16px;
+  }
+  .tick-list-tab {
+    margin-top: 15px;
+  }
+  .tick-list-tab .row .tick-tab-item {
+    padding-left: 35px;
+    background-size: auto 20px;
+  }
+  .tick-list-tab .row .tick-tab-item .tick-tab-title {
+    font-size: 18px;
   }
 }
 
@@ -1358,11 +1369,6 @@ svg {
   .navbar .mobile-sandwich {
     top: 0;
     height: 60px;
-  }
-  .contacts-wrap .contacts-icon {
-    font-size: 18px;
-    background-size: auto 15px;
-    padding-left: 25px;
   }
   .menu-button {
     width: 60px;
@@ -1847,7 +1853,7 @@ section .why-about .section-title {
 
 @media (max-width: 575.98px) {
   .img-gallery {
-    height: 200px;
+    height: 130px;
   }
 }
 
@@ -2053,6 +2059,12 @@ section .why-about .section-title {
   .step-tab .tab-pane {
     padding: 30px 30px;
   }
+  .step-tab .step-tab-title {
+    font-size: 24px;
+  }
+  .step-tab .step-tab-subtitle {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2060,11 +2072,21 @@ section .why-about .section-title {
     font-size: 18px;
     margin-bottom: 10px;
   }
+  .step-tab .step-tab-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .step-tab .step-tab-subtitle {
+    font-size: 18px;
+  }
   .step-tab .contacts-form .row .col-12:first-child {
     border-right: none;
   }
   .step-tab .tab-pane {
     padding: 15px 15px;
+  }
+  .step-tab .tab-pane .btn-main {
+    margin-top: 10px;
   }
 }
 
