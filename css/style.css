@@ -2068,7 +2068,7 @@ section .why-about .section-title {
   }
 }
 
-.map-wrap {
+.ymap-container {
   height: 80vh;
 }
 
@@ -2151,7 +2151,7 @@ section .why-about .section-title {
 }
 
 @media (max-width: 991.98px) {
-  .map-wrap {
+  .ymap-container {
     height: 40vh;
   }
   .map-info {
@@ -2196,12 +2196,113 @@ section .why-about .section-title {
 }
 
 @media (max-width: 767.98px) {
-  .map-wrap {
+  .ymap-container {
     height: 320px;
   }
   .map-info .contacts-point,
   .map-info .contacts-form-text {
     font-size: 18px;
+  }
+}
+
+.ymap-container {
+  background: url("../img/map-lg.png") #fff no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#map-yandex {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  z-index: 7;
+}
+
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader {
+  color: #000;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 15;
+  -webkit-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  background-color: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+}
+
+.loader:after,
+.loader:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: solid 8px #fff;
+  border-left-color: transparent;
+  border-radius: 50%;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
   }
 }
 
