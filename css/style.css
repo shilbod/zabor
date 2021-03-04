@@ -459,8 +459,8 @@ h1 {
 
 @media (max-width: 991.98px) {
   header {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1050;
   }
@@ -853,6 +853,9 @@ svg {
     font-size: 12px;
     margin-top: 10px;
   }
+  .contacts-form {
+    width: 90%;
+  }
   .contacts-form .col-12:first-child {
     border-right: none;
   }
@@ -1217,8 +1220,8 @@ svg {
 
 @media (max-width: 991.98px) {
   header {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1050;
   }
@@ -2326,6 +2329,9 @@ footer .footer-copy {
 }
 
 @media (max-width: 991.98px) {
+  body {
+    padding-top: 70px;
+  }
   h1 {
     font-size: 36px;
   }
@@ -2343,6 +2349,9 @@ footer .footer-copy {
 }
 
 @media (max-width: 767.98px) {
+  body {
+    padding-top: 60px;
+  }
   h1 {
     font-size: 32px;
   }
