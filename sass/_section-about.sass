@@ -7,6 +7,41 @@
     .row
         justify-content: flex-end
 .img-about
+    display: block
+    width: 500px
     position: absolute
     bottom: 0
     left: 10%
+
+@media (max-width: 1199.98px)
+    .img-about
+        width: 480px
+        left: 1%
+
+@media (max-width: 991.98px)
+    .about-description
+        margin-bottom: 30px
+        span
+            font-size: 18px
+    .section-about
+        &.section-padding
+            padding-bottom: 0
+        .row
+            justify-content: flex-start
+        .btn-main
+            display: flex
+            justify-content: center
+            align-items: center
+    .img-about
+        position: relative
+        width: 400px
+        margin: auto
+        margin-top: 30px
+
+@media (max-width: 767.98px)
+    .about-description
+        font-size: 16px
+        span
+            font-size: 16px
+    .img-about
+        width: 300px

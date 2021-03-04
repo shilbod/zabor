@@ -25,7 +25,7 @@
     width: 80%
     margin: auto
     margin-top: 30px
-    .col
+    .col-12
         &:first-child
             border-right: #ffffff 3px solid
     .contacts-form-text
@@ -50,3 +50,43 @@
         .social-icon
             width: 40px
 
+@media (max-width: 1199.98px)
+    .forms-wrap,
+    .contacts-form
+        width: 100%
+
+@media (max-width: 767.98px)
+    .forms-wrap 
+        form
+            padding: 15px
+        .form-input
+            height: 55px
+            font-size: 18px
+        .btn-form
+            height: 55px
+            font-size: 20px
+        .form-policy
+            font-size: 12px
+            margin-top: 10px
+    .contacts-form
+        .col-12
+            &:first-child
+                border-right: none
+        .contacts-form-text
+            font-size: 18px
+        .form-text-messenger
+            text-align: center
+        .contacts-wrap
+            align-items: center
+            margin-bottom: 15px
+            .contacts-icon
+                color: #ffffff
+                font-size: 24px
+                padding-left: 40px
+                background-size: auto 25px
+                &:first-child
+                    margin-bottom: 5px
+        .messenger-icon-wrap
+            justify-content: center
+            .social-icon
+                width: 30px

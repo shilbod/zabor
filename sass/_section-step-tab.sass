@@ -18,7 +18,7 @@
         width: 100%
         .row
             width: 60%
-            .col
+            .col-12
                 &:first-child
                     border-right: $dark 3px solid
         .contacts-form-text
@@ -53,3 +53,35 @@
         background-image: url(../img/tab-5.jpg)
     #step-6
         background-image: url(../img/tab-6.jpg)
+
+@media (max-width: 1199.98px)
+    .step-tab
+        .forms-wrap
+            width: 100%
+            .title-form-step
+                text-align: center
+        .contacts-form 
+            .row
+                width: 100%
+                margin: auto
+        .tab-pane
+            background-position: 30% center
+
+@media (max-width: 991.98px)
+    .step-tab .tab-pane
+        padding: 30px 30px
+
+@media (max-width: 767.98px)
+    .step-tab
+        .forms-wrap
+            .title-form-step
+                font-size: 18px
+                margin-bottom: 10px
+            .row
+                ali
+        .contacts-form 
+            .row 
+                .col-12:first-child
+                    border-right: none
+        .tab-pane
+            padding: 15px 15px
