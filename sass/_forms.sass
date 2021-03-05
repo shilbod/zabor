@@ -1,11 +1,16 @@
 .forms-wrap
-    width: 80%
+    width: 90%
     background-color: #ffffff
     border-radius: $border-radius
     margin: 0 auto
     padding: 10px
+    .form-title
+        font-size: 22px
+        +Semibold
+        text-align: center
+        margin-bottom: 20px
     form
-        padding: 30px
+        padding: 20px
         border: $color-el 3px solid
         border-radius: $border-radius
     .form-input
@@ -53,10 +58,11 @@
 @media (max-width: 1199.98px)
     .forms-wrap,
     .contacts-form
-        width: 100%
+        width: 80%
 
 @media (max-width: 767.98px)
     .forms-wrap 
+        width: 100%
         form
             padding: 15px
         .form-input

@@ -12,19 +12,21 @@
     background-position: 20px 20px
 .tick-list
     .row
-        padding-top: 30px
         list-style-type: none
         counter-reset: my-counter
-        li::before 
-            padding-left: 60px
+        .num
+            display: block
             font-size: 70px
-            height: 100%
+            padding-left: 60px
             +Bold
             color: $color-el
-            line-height: 0
-            content: counter(my-counter) /* Выводим число */
-            counter-increment: my-counter /* Увеличиваем значение счётчика */
-            content: "0" counter(my-counter)
+            margin-top: -15px
+            margin-bottom: -15px
+            &::after
+                line-height: 0
+                content: counter(my-counter) /* Выводим число */
+                counter-increment: my-counter /* Увеличиваем значение счётчика */
+                content: "0" counter(my-counter)
     .tick-list-item
         padding-left: 60px
         background-image: url(../img/check.png)
@@ -55,9 +57,9 @@
 @media (max-width: 991.98px)
     .tick-list
         .row
-            li::before 
-                padding-left: 40px
+            .num
                 font-size: 50px
+                padding-left: 40px
         .tick-list-item
             padding-left: 40px
             background-size: auto 30px
@@ -77,10 +79,10 @@
 @media (max-width: 767.98px)
     .tick-list
         .row
-            padding-top: 20px
-            li::before 
+            .num
                 padding-left: 40px
                 font-size: 40px
+                margin-top: -10px
         .tick-list-item
             .tick-list-title
                 font-size: 20px

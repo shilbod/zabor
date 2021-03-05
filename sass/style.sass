@@ -25,6 +25,7 @@ a:hover
 ol, ul
     padding: 0
     margin: 0
+    list-style-position: inside
 
 button:active, button:focus, a:active, a:focus,
 input, input:active, input:focus, input:active
@@ -40,11 +41,37 @@ a::-moz-focus-inner
   border: 0
 
 
-h1
+h1,
+.title-carousel
     position: relative
     font-size: 46px
     +Semibold
     line-height: 1.2
+
+h2
+    font-size: 36px
+    +Semibold
+    text-align: center
+    margin-top: 40px
+    margin-bottom: 30px
+
+.subtitle-h1
+    width: 80%
+    font-size: 24px
+    line-height: 1.2
+    color: #ffffff
+    +Medium
+    text-align: center
+    margin: auto
+    margin-bottom: 30px
+
+.h1-page,
+.title-carousel
+    width: 80%
+    color: #ffffff
+    text-align: center
+    margin: auto
+    margin-bottom: 20px
 
 .btn
     display: table-cell
@@ -62,6 +89,7 @@ h1
     height: 60px
     padding: 0 40px
     font-size: 22px
+
 .btn-main-card
     height: 45px
     font-size: 18px
@@ -74,6 +102,20 @@ h1
     width: 100%
     background-color: $gray
     font-size: 22px
+
+.btn-card
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+    padding: 0
+
+.btn-card-second
+    background-color: #ffffff
+    border: 3px solid $color-el
+    &:hover
+        border: 3px solid darken($color-el, 5%)
 
 .dropdown-toggle::after
     vertical-align: middle
@@ -132,6 +174,8 @@ h1
 
 
 @import 'header'
+@import 'page/page'
+@import 'page/breadcrumbs'
 @import 'menu-button'
 @import 'forms'
 @import 'item'
@@ -149,15 +193,40 @@ h1
 @import 'ymap'
 @import 'footer'
 
+@media (max-width: 1399.98px)
+    .subtitle-h1
+        font-size: 22px
+
 @media (max-width: 1199.98px)
-    h1
+    h1,
+    .title-carousel
         font-size: 42px
+    .h1-page,
+    .title-carousel
+        width: 90%
+    .subtitle-h1
+        width: 90%
+        font-size: 24px
+    h2
+        font-size: 32px
 
 @media (max-width: 991.98px)
     body
         padding-top: 70px
-    h1
+    h1,
+    .title-carousel
         font-size: 36px
+    .h1-page,
+    .title-carousel
+        width: 100%
+    .subtitle-h1
+        width: 100%
+        font-size: 22px
+
+    h2
+        font-size: 28px
+        margin-top: 30px
+        margin-bottom: 20px
 
     .label-in-stock
         font-size: 14px
@@ -172,8 +241,15 @@ h1
 @media (max-width: 767.98px)
     body
         padding-top: 60px
-    h1
+    h1,
+    .title-carousel
         font-size: 32px
+    .subtitle-h1
+        font-size: 20px
+
+    h2
+        font-size: 26px
+
     .btn
         height: 40px
         padding: 0 10px
@@ -194,6 +270,12 @@ h1
         height: 55px
         font-size: 20px
 
+    .btn-card
+        height: 50px
+        font-size: 18px
+
     .label-in-stock
         top: auto
         bottom: 15px
+
+    

@@ -2,7 +2,6 @@
     .carousel-item
         height: 80vh
     .carousel-caption
-        width: 55%
         margin: 0 auto
         top: 45%
         transform: translateY(-45%)
@@ -24,11 +23,7 @@
             top: 50%
             transform: translateY(-50%)
             object-fit: cover
-            height: stretch
-    .description-carousel
-        font-size: 24px
-        +Medium
-        margin: 30px 0
+            height: inherit
     .btn-main
         display: inline-block
         padding-top: 16px
@@ -37,7 +32,6 @@
 @media (max-width: 1399.98px)
     .main-slider
         .carousel-caption
-            width: 60%
             top: 40%
             transform: translateY(-40%)
 
@@ -53,8 +47,6 @@
             right: 0
             left: 0
             transform: translateY(-40%)
-        .description-carousel
-            font-size: 22px
 
 @media (max-width: 991.98px)
     .main-slider
@@ -64,8 +56,6 @@
             width: 70%
             top: 40%
             transform: translateY(-40%)
-        .description-carousel
-            font-size: 20px
 
 @media (max-width: 767.98px)
     .main-slider
@@ -75,9 +65,6 @@
             width: 80%
             top: 40%
             transform: translateY(-40%)
-        .description-carousel
-            font-size: 18px
-            margin: 20px 0
         .btn-main
             padding-left: 20px
             padding-right: 20px
