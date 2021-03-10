@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+      <div class="nav-wrap">
+        <nav class="navbar navbar-top ">
+        <div class="container">
+            <div class="row m-0 gx-xl-4 gx-3 gx-xxl-5 align-items-center justify-content-between">
+              <div class="col-auto flex-fill p-0">
+                <a class="navbar-brand" href="#">
+                  <img src="../img/logo.png" alt="" class="logo">
+                  Строительство заборов под ключ
+                </a>
+              </div>
+                <div class="col-auto social-icon-wrap">
+                  <a class="social-icon vk" href=""></a>
+                  <a class="social-icon fb" href=""></a>
+                  <a class="social-icon inst" href=""></a>
+                </div>
+                <div class="col-auto messenger-icon-mobile">
+                    <div class="col messenger-icon-wrap">
+                        <div>Задайте вопрос напрямую в:</div>
+                        <a class="social-icon vb" href=""></a>
+                        <a class="social-icon tg" href=""></a>
+                    </div>
+                    <div class="time-work">Ежедневно с 08:00 до 20.00</div>
+                </div>
+                <div class="col-auto phone-wrap">
+                    <div class="col contacts-wrap">
+                        <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                        <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                    </div>
+                </div>
+                <div class="col-auto btn-callback">
+                    <button type="button" class="btn">Заказать звонок</button>
+                </div>
+                <div class="col-auto mobile-sandwich">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu-button">
+                      <div class="plate plate1" onclick="this.classList.toggle('active')">
+                        <svg class="burger" version="1.1" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 30,65 H 70"></path>
+                            <path class="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"></path>
+                            <path class="line line3" d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"></path>
+                        </svg>
+                        <svg class="x" version="1.1" viewBox="0 0 100 100">
+                            <path class="line" d="M 34,32 L 66,68"></path>
+                            <path class="line" d="M 66,32 L 34,68"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar-menu collapse" id="navbarSupportedContent">
+          <div class="container">              
+              <ul class="navbar nav nav-fill">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Каталог заборов</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Модульный забор без фундамента</a></li>
+                        <li><a class="dropdown-item" href="#">Забор Брик</a></li>
+                        <li><a class="dropdown-item" href="#">Забор Бессер</a></li>
+                        <li><a class="dropdown-item" href="#">Забор из профнастила</a></li>
+                        <li><a class="dropdown-item" href="#">Забор из штакетника металлического</a></li>
+                        <li><a class="dropdown-item" href="#">Деревянные заборы</a></li>
+                        <li><a class="dropdown-item" href="#">Забор жалюзи</a></li>
+                        <li><a class="dropdown-item" href="#">Забор ДПК</a></li>
+                        <li><a class="dropdown-item" href="#">Забор из Евросетки</a></li>
+                        <li><a class="dropdown-item" href="#">Деревянные заборы</a></li>
+                        <li><a class="dropdown-item" href="#">Кованный забор</a></li>
+                        <li><a class="dropdown-item" href="#">Горизонтальные заборы</a></li>
+                      </ul>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">Ворота и калитка</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Откатные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Распашные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Гаражные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Ролетные ворота</a></li>
+                        <li><a class="dropdown-item" href="#">Калитка</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">Благоустройство</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Укладка Плитки</a></li>
+                      <li><a class="dropdown-item" href="#">Устройство газона</a></li>
+                      <li><a class="dropdown-item" href="#">Монтаж террасной доски</a></li>
+                      <li><a class="dropdown-item" href="#">Навесы</a></li>
+                      <li><a class="dropdown-item" href="#">Вольеры</a></li>
+                      <li><a class="dropdown-item" href="#">Дровница</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">Материалы</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Металлопрофиль</a></li>
+                      <li><a class="dropdown-item" href="#">Штакетник металлический</a></li>
+                      <li><a class="dropdown-item" href="#">Евросетка</a></li>
+                      <li><a class="dropdown-item" href="#">Столбы для забора</a></li>
+                      <li><a class="dropdown-item" href="#">Доска ДПК для Забора</a></li>
+                      <li><a class="dropdown-item" href="#">Доска ДПК для терассы</a></li>
+                      <li><a class="dropdown-item" href="#">Комплектующие для ворот откатных</a></li>
+                      <li><a class="dropdown-item" href="#">Автоматика для откатных ворот</a></li>
+                      <li><a class="dropdown-item" href="#">Блоки для забора</a></li>
+                      <li><a class="dropdown-item" href="#">Комплектующие для калитки</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Фото готовых объектов</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#" >Статьи</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#" >Контакты</a>
+                  </li>
+              </ul>
+              <div class="col-auto phone-mobile-wrap">
+                <div class="col contacts-wrap">
+                    <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                    <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                </div>
+            </div>
+              <div class="messenger-mobile">
+                <div class="col messenger-icon-wrap">
+                    <div>Задайте вопрос напрямую в:</div>
+                    <a class="social-icon vb" href=""></a>
+                    <a class="social-icon tg" href=""></a>
+                </div>
+                <div class="time-work">Ежедневно с 08:00 до 20.00</div>
+              </div>
+              <div class="social-mobile-wrap">
+                <a class="social-icon vk" href=""></a>
+                <a class="social-icon fb" href=""></a>
+                <a class="social-icon inst" href=""></a>
+              </div>
+          </div>
+        <!-- /.container -->
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+        <section class="main-block-page">
+            <div class="container">
+                <h1 class="h1-page">Купить ворота и калитку в Минске</h1>
+                <div class="subtitle-h1">Ворота – это визитная карточка территории, которая может рассказать многое о хозяевах участка: об их вкусах, предпочтениях, достатке. Аккуратные, стильные, современные ворота с калиткой украсят территорию и обеспечат достойную защиту от нежелательных вторжений.</div>
+                <div class="forms-wrap">
+                    <form>
+                        <div class="row gy-2 gy-md-3">
+                        <div class="col-12 col-lg-4">
+                            <input class="form-control form-input" data-name="name" type="text" name="Имя" maxlength="30" placeholder="Ваше имя" required="">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <input class="form-control form-input" id="phone" data-name="phone" type="text" name="Номер телефона" maxlength="19" placeholder="+375 29 123 45 67" required="">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <button type="submit" class="btn btn-form">Отправить заявку</button>
+                        </div>
+                        </div>
+                        <div class="form-policy">«Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности»</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="breadcrumbs">
+            <div class="container">
+                <a href="#" class="breadcrumbs-active">Главная</a> -
+                <a href="#">Ворота и калитки</a>
+            </div>
+        </section>
+        <div class="container">
+            <h2>Ворота и калитки в Минске</h2>
+            <div class="tick-list">
+                <ol class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                  <li class="col">
+                      <span class="num"></span>
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Работы любой сложности</div>
+                      <div class="tick-list-subtitle">Монтаж заборов и благоустройство участков под ключ.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <span class="num"></span>
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Опытные прорабы</div>
+                      <div class="tick-list-subtitle">Прорабы с опытом работы не менее 10 лет контролируют работу на каждом этапе.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <span class="num"></span>
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">5 собственных бригад</div>
+                      <div class="tick-list-subtitle">Опытные профильные рабочие обладающие знаниями и всем необходимым инструментом.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <span class="num"></span>
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Бесплатный замер</div>
+                      <div class="tick-list-subtitle">Выезд в заранее согласованный день и время.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <span class="num"></span>
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">Обязательное заключение договора</div>
+                      <div class="tick-list-subtitle">Строгое соблюдение сроков и условий договора.</div>
+                    </div>
+                  </li>
+                  <li class="col">
+                    <span class="num"></span>
+                    <div class="tick-list-item">
+                      <div class="tick-list-title">100% гарантия</div>
+                      <div class="tick-list-subtitle">Гарантия до 10-ти лет на работы и материалы.</div>
+                    </div>
+                  </li>
+                </ol>
+            </div>
+            <p class="text-page">Ворота – это визитная карточка территории, которая может рассказать многое о хозяевах участка: об их вкусах, предпочтениях, достатке. Аккуратные, стильные, современные ворота с калиткой украсят территорию и обеспечат достойную защиту от нежелательных вторжений. На сайте нашей компании «Все о стройке» вы можете выбрать, заказать и купить по выгодной стоимости именно те ворота, которые впишутся в стиль вашего участка.
+            </p>
+            <h2>Какие ворота купить</h2>
+            <div class="text-page">
+                Прежде чем купить ворота с калиткой, необходимо учесть несколько важных нюансов:<br><br>
+                <ul>
+                    <li>Требуемая ширина въезда. Важно рассчитывать возможность въезда не только для собственного авто, но и для других машин, которые могут к вам приезжать. Оптимальный вариант – прежде чем купить изделие, учесть стандартные габариты среднестатистического авто и прибавить к ним 1 метр, чтобы любая машина гарантированно смогла заехать на территорию;</li>
+                    <li>Размеры встроенной калитки и ее вид, количество калиток (одна или две);</li>
+                    <li>Конструкции, которые могут быть распашными или откатными. Каждый вид требует определенных условий и занимает разное количество места на участке;</li>
+                    <li>Стоимость. Въездные ворота и калитки устанавливаются надолго, поэтому важно, чтобы они были изготовлены из материала высокого качества. Покупая такие товары, необходимо понимать, что цена высококачественной конструкции не может быть низкой.</li>
+                </ul>
+            </div>
+            <div class="card-page">
+                <div class="row gy-lg-4 gx-lg-4 gy-3 gx-3">
+                    <div class="col-auto col-md-6 col-xl-4">
+                      <div class="card">
+                        <a href="" class="card-link">
+                          <div class="card-body">
+                            <h4 class="card-title">Откатные ворота</h4>
+                          </div>
+                          <img src="../img/derevo-lending1.jpg" class="card-img" alt="...">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col"><a href="#" class="btn btn-card">Заказать</a></div>
+                                  <div class="col"><a href="#" class="btn btn-card btn-card-second">Подробнее</a></div>
+                              </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-xl-4">
+                      <div class="card">
+                        <a href="" class="card-link">
+                          <div class="card-body">
+                            <h4 class="card-title">Распашные ворота</h4>
+                          </div>
+                          <img src="../img/derevo-lending1.jpg" class="card-img" alt="...">
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col"><a href="#" class="btn btn-card">Заказать</a></div>
+                                <div class="col"><a href="#" class="btn btn-card btn-card-second">Подробнее</a></div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-xl-4">
+                        <div class="card">
+                          <a href="" class="card-link">
+                            <div class="card-body">
+                              <h4 class="card-title">Гаражные ворота</h4>
+                            </div>
+                            <img src="../img/derevo-lending1.jpg" class="card-img" alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col"><a href="#" class="btn btn-card">Заказать</a></div>
+                                    <div class="col"><a href="#" class="btn btn-card btn-card-second">Подробнее</a></div>
+                                </div>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-xl-4">
+                        <div class="card">
+                          <a href="" class="card-link">
+                            <div class="card-body">
+                              <h4 class="card-title">Ролетные ворота</h4>
+                            </div>
+                            <img src="../img/derevo-lending1.jpg" class="card-img" alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col"><a href="#" class="btn btn-card">Заказать</a></div>
+                                    <div class="col"><a href="#" class="btn btn-card btn-card-second">Подробнее</a></div>
+                                </div>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-xl-4">
+                        <div class="card">
+                          <a href="" class="card-link">
+                            <div class="card-body">
+                              <h4 class="card-title">Калитка</h4>
+                            </div>
+                            <img src="../img/derevo-lending1.jpg" class="card-img" alt="...">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col"><a href="#" class="btn btn-card">Заказать</a></div>
+                                    <div class="col"><a href="#" class="btn btn-card btn-card-second">Подробнее</a></div>
+                                </div>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <h2>Рекомендации по выбору конструкций ворот</h2>
+            <p class="text-page">Важнейшие параметры, от которых необходимо отталкиваться при выборе въездных ворот, помимо индивидуальных пожеланий хозяев участка – внешний вид забора и наличие автомобиля. Изделия должны гармонично вписываться в уже существующий забор, дополняя его вид и не нарушая стиль ограждения.
+            <br><br>
+            Для участка, на котором расположен гараж или стоянка для авто, лучше купить откатные въездные ворота, снабженные автоматической системой.
+            </p>
+            <h2>Фото распашных и откатных ворот</h2>
+            <div class="gallery-page">
+                <div class="row gy-md-3 gx-md-3 gy-2 gx-2"> 
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                      <a data-fancybox="gallery" href="../img/brick4.jpg">
+                        <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                        <a data-fancybox="gallery" href="../img/brick4.jpg">
+                          <img class="img-gallery" src="../img/brick4.jpg" alt="...">
+                        </a>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <section class="section-padding section-form">
+            <div class="container">
+              <h3 class="section-title">Оставьте заявку и получите расчёт ворот или калитки в течении 5 минут</h3>
+              <div class="section-subtitle">Заполните форму и мы перезвоним вам и сориентирую по стоимости</div>
+              <div class="forms-wrap">
+                  <form>
+                    <div class="row gy-2 gy-md-3">
+                      <div class="col-12 col-lg-4">
+                        <input class="form-control form-input" data-name="name" type="text" name="Имя" maxlength="30" placeholder="Ваше имя" required="">
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <input class="form-control form-input" id="phone" data-name="phone" type="text" name="Номер телефона" maxlength="19" placeholder="+375 29 123 45 67" required="">
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <button type="submit" class="btn btn-form">Отправить заявку</button>
+                      </div>
+                    </div>
+                    <div class="form-policy">«Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности»</div>
+                  </form>
+              </div>
+              <div class="contacts-form">
+                <div class="row gx-0 gx-md-5 justify-content-center">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contacts-form-text form-text-call">Звоните по телефону 8:00 до 20:00, ежедневно</div>
+                    <div class="contacts-wrap">
+                      <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                      <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contacts-form-text form-text-messenger">или оставьте заявку через Viber или Telegram</div>
+                    <div class="messenger-icon-wrap">
+                      <a class="social-icon vb" href=""></a>
+                      <a class="social-icon tg" href=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <div class="container">
+            <h2>Конструкция ворот и калиток</h2>
+            <div class="text-page">
+                Для обшивки распашных ворот применяются различные материалы, однако конструкция построек остается неизменной. Ворота с встроенной калиткой, которые вы можете купить в нашем магазине, состоят из следующих элементов:<br><br>
+                <ul>
+                    <li>Стойки (столбы), представляющие собой опору для крепления;</li>
+                    <li>Рама, которая может быть изготовлена из металла или дерева;</li>
+                    <li>Отделочные материалы для обшивки;</li>
+                    <li>Фурнитура: петли, задвижки, замки.</li>
+                </ul><br>
+                Выбор материала для обшивки зависит от внешнего вида других выбранных элементов и внешнего вида забора. Прежде чем купить изделие, проверьте, чтобы обшивка сочеталась с остальными частями конструкции, иначе внешний вид участка будет крайне нелепым: например, неуместно смотрятся металлические готовые ворота с калиткой, встроенные в ограждение из рабицы, или створки из профнастила в сочетании с дорогим каменным забором.
+            </div>
+            <h2>Разновидности ворот и калиток</h2>
+            <div class="text-page">Виды калиток определяются не только каркасом, а материалом, которым они заполнены внутри. Вы можете подобрать и купить калитку из множества существующих разновидностей:<br><br>
+                <ul>
+                    <li>Профнастил или металлоштакетник – самый доступный и простой вариант, который широко используется в строительной практике. На ворота из профнастила, калитка цены наиболее доступны, их можно купить по низкой цене и легко установить своими руками;</li>
+                    <li>Кованая – оригинальная и прочная разновидность элементов входной группы. Такие конструкции могут быть украшены ажурной росписью или разноцветными декоративными камнями, они смотрятся легко и воздушно, купить их можно для любого участка;</li>
+                    <li>Сварные варианты характеризуются легкостью установки, доступной ценой, презентабельным внешним видом. Такие конструкции можно украсить необычными узорами или вензелями.
+                    </li>
+                </ul>
+            </div>
+            <h2>Ворота и калитки с автоматизацией</h2>
+            <p class="text-page">
+                Автоматические ворота с калиткой возможно установить изначально, можно также автоматизировать обычные распашные или откатные ворота во время эксплуатации. Для автоматизации достаточно просто купить линейный электропривод и подвести сетевое стандартное напряжение переменного тока.
+                <br><br>
+                Автоматика будет работать бесперебойно, если заранее обдумать установку несущих столбов. Для этой роли лучше купить бетонные или кирпичные конструкции.
+                </p>
+            <div class="text-page">В нашем магазине «Все о стройке» можно купить ворота металлические с калиткой, автоматика которых обладает многими преимуществами:<br><br>
+                <ul>
+                    <li>электронные компоненты имеют высокую стойкость к влажности, агрессивной среде, экстремальным температурам и осадкам;</li>
+                    <li>сенсоры работают бесперебойно и надежно, не выходя из строя от резких перепадов температур;</li>
+                    <li>некоторые автоматические приводы имеют дополнительный набор режимов движения и опций.</li>
+                </ul><br>
+                Если вы ищете что-то необычное (хотите купить готовые ворота с двумя калитками, сложную сварную конструкцию) или желаете получить совет – обращайтесь к консультантам нашего интернет-магазина, и вам с радостью помогут!
+            </div>
+        </div>
+        <section class="section-padding sec-gray section-about">
+            <div class="container">
+                <h3 class="section-title">О нашей компании</h3>
+                <div class="section-subtitle">Не можете определиться с забором? Не знаете, кому доверить его установку? Мы знает, что нужно делать!</div>
+                <div class="row">
+                  <div class="col col-lg-6">
+                    <div class="col col-lg-10 about-description"><span>Мы занимаемся производством и установкой заборов «под ключ» уже 6 лет, и количество положительных отзывов растет с каждым днем, убедитесь сами!</span><br><br>
+                      Кроме того, с такой же динамикой растет и количество выгодных предложений, акций и скидок, которые Вы можете получить, заказывая забор у нас!<br><br>
+                      Специалисты с многолетним стажем и немалым опытом в области строительства знают своё дело и выполнят любую, даже самую кропотливую работу грамотно и качественно, а главное быстро!
+                    </div>
+                    <a href="" class="btn btn-main">Подробнее о нашей компании</a>
+                  </div>
+                </div>
+                <img class="img-about" src="../img/about.png" alt="">
+            </div>
+            <!-- /.container -->
+        </section>
+        <section class="section-padding section-step">
+            <div class="container">
+              <h3 class="section-title">Свяжитесь с нами или оставьте завку и мы поможем с выбором и рассчитаем стоимость по телефону уже через 5 минут</h3>
+              <div class="tabs-wrap">
+                <ul class="nav nav-tabs nav-fill main-step-tab" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="step-1-tab" data-bs-toggle="tab" data-bs-target="#step-1" type="button" role="tab" aria-controls="step-1" aria-selected="true">1. Проконсультируем</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="step-2-tab" data-bs-toggle="tab" data-bs-target="#step-2" type="button" role="tab" aria-controls="step-2" aria-selected="false">2. Бесплатный замер</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="step-3-tab" data-bs-toggle="tab" data-bs-target="#step-3" type="button" role="tab" aria-controls="step-3" aria-selected="false">3. Подписание договора</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="step-4-tab" data-bs-toggle="tab" data-bs-target="#step-4" type="button" role="tab" aria-controls="step-4" aria-selected="false">4. Изготовление и доставка</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="step-5-tab" data-bs-toggle="tab" data-bs-target="#step-5" type="button" role="tab" aria-controls="step-5" aria-selected="false">5. Быстрый монтаж</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="step-6-tab" data-bs-toggle="tab" data-bs-target="#step-6" type="button" role="tab" aria-controls="step-6" aria-selected="false">6. Принятие работы</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content step-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="step-1" role="tabpanel" aria-labelledby="step-1">
+                      <div class="forms-wrap">
+                        <form>
+                          <div class="row gy-2 gy-md-3">
+                            <div class="title-form-step"><span>Заполните форму</span> - мы перезвоним в течении 5 минут и проконсультируем Вас по всем вопросам</div>
+                            <div class="col-12 col-md-6">
+                              <input class="form-control form-input" id="phone" data-name="phone" type="text" name="Номер телефона" maxlength="19" placeholder="+375 29 123 45 67" required="">
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <button type="submit" class="btn btn-form">Отправить заявку</button>
+                            </div>
+                          </div>
+                          <div class="form-policy">«Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности»</div>
+                        </form>
+                      </div>
+                      <div class="contacts-form">
+                        <div class="row gx-5 justify-content-center" >
+                          <div class="col-12 col-md-6 col-lg-5 col-xl-6">
+                            <div class="contacts-form-text form-text-call">Звоните по телефону 8:00 до 20:00, ежедневно</div>
+                            <div class="contacts-wrap">
+                              <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                              <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-5 col-xl-6">
+                            <div class="contacts-form-text form-text-messenger">или оставьте заявку через Viber или Telegram</div>
+                            <div class="messenger-icon-wrap">
+                              <a class="social-icon vb" href=""></a>
+                              <a class="social-icon tg" href=""></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="step-2" role="tabpanel" aria-labelledby="step-2">
+                      <div class="step-tab-title">Бесплатный выезд замерщика в удобное для Вас время</div>
+                      <div class="tick-list-tab">
+                        <ol class="row gy-2 gy-md-3 row-cols-1 row-cols-md-2">
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Составление замерного листа</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Изучение грунта</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Консультация по Вашим параметрам</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Презентация образцов материала</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Составление карты высот</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Подбор забора с учетом Ваших пожеланий</div>
+                            </div>
+                          </li>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="step-3" role="tabpanel" aria-labelledby="step-3">
+                      <div class="step-tab-title">Заключение договора на месте либо в офисе</div>
+                      <div class="step-tab-subtitle">Этапы перед подписание:</div>
+                      <div class="tick-list-tab">
+                        <ol class="row gy-2 gy-md-3 row-cols-1 row-cols-md-2">
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Составление работ</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Уточнение деталей по проекту</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Согласование сроков работ</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Презентация образцов материала</div>
+                            </div>
+                          </li>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="step-4" role="tabpanel" aria-labelledby="step-4">
+                      <div class="step-tab-title">Изготовление и быстрая доставка</div>
+                      <div class="step-tab-subtitle">В любую точку Минской области</div>
+                      <div class="tick-list-tab">
+                        <ol class="row gy-2 gy-md-3 row-cols-1 row-cols-md-2">
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Полное информирование о этапах доставки, от выезда до прибытия</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Бесплатная разгрузка материалов на Ваш участок</div>
+                            </div>
+                          </li>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="step-5" role="tabpanel" aria-labelledby="step-5">
+                      <div class="step-tab-title">Монтаж забора и доп. конструкций</div>
+                      <div class="step-tab-subtitle">Установка забора до 100 метров за один день</div>
+                      <div class="tick-list-tab">
+                        <ol class="row gy-2 gy-md-3 row-cols-1 row-cols-md-2">
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Полное информирование о этапах доставки, от выезда до прибытия</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Монтаж забора<br>
+                                Монтаж ворот<br>
+                                Монтаж калиток<br>
+                                Уборка и вывоз мусора</div>
+                            </div>
+                          </li>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="step-6" role="tabpanel" aria-labelledby="step-6">
+                      <div class="step-tab-title">Бесплатный выезд замерщика в удобное для Вас время</div>
+                      <div class="tick-list-tab">
+                        <ol class="row gy-2 gy-md-3 row-cols-1 row-cols-md-2">
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Согласовываем все сделанные работы</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Даем расширенную гарантию</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <div class="tick-tab-item">
+                              <div class="tick-tab-title">Консультируем по обслуживанию</div>
+                            </div>
+                          </li>
+                          <li class="col">
+                            <a href="" class="btn btn-main">Оставить заявку</a>
+                          </li>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- /.container -->
+          </section>
+        <section class="section-map">
+            <div class="container">
+              <div class="map-info">
+                <h3 class="section-title">Наши контакты</h3>
+                <div class="contacts-form">
+                  <div class="row gy-3 row-cols-1">
+                    <div class="col">
+                      <div class="contacts-point">Минский р-он, п.Колодищи, ул. Молокович 29</div>
+                    </div>
+                    <div class="col">
+                      <div class="contacts-form-text form-text-call">Звоните по телефону 8:00 до 20:00, ежедневно</div>
+                      <div class="contacts-wrap">
+                        <a class="contacts-icon a1" href="tel:+375445763090">+375 (44) 576-30-90</a>
+                        <a class="contacts-icon mts" href="tel:+375336393090">+375 (33) 639-30-90</a>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="contacts-form-text form-text-messenger">или оставьте заявку через Viber или Telegram</div>
+                      <div class="messenger-icon-wrap">
+                        <a class="social-icon vb" href=""></a>
+                        <a class="social-icon tg" href=""></a>
+                      </div>
+                    </div>
+                    <div class="col social-icon-wrap">
+                      <a class="social-icon vk" href=""></a>
+                      <a class="social-icon fb" href=""></a>
+                      <a class="social-icon inst" href=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div id="map-yandex"></div>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+          <div class="footer-wrap">
+            <div class="accordion">
+              <div class="row gy-3 row-cols-1">
+                <div class="col">
+                  <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png" alt="" class="logo">
+                    Строительство заборов под ключ
+                  </a>
+                  <div class="accordion-item catalog-item-wrap">
+                    <div class="accordion-header catalog-header">
+                      <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" >
+                        Компания
+                      </a>
+                    </div>
+                    <div id="collapse1" class="accordion-collapse collapse">
+                      <ul class="accordion-body">
+                        <li><a class="catalog-item" href="#">О нас</a></li>
+                        <li><a class="catalog-item" href="#">Фото готовых объектов</a></li>
+                        <li><a class="catalog-item" href="#">Отзывы</a></li>
+                        <li><a class="catalog-item" href="#">Статьи</a></li>
+                        <li><a class="catalog-item" href="#">Контакты</a></li>
+                        <li><a class="catalog-item" href="#">Карта сайта</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="accordion-item catalog-item-wrap">
+                    <div class="accordion-header catalog-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        Каталог заборов
+                      </button>
+                    </div>
+                    <div id="collapse2" class="accordion-collapse collapse">
+                      <ul class="accordion-body">
+                        <li><a class="catalog-item" href="#">Модульный забор без фундамента</a></li>
+                        <li><a class="catalog-item" href="#">Забор Брик</a></li>
+                        <li><a class="catalog-item" href="#">Забор Бессер</a></li>
+                        <li><a class="catalog-item" href="#">Забор из профнастила</a></li>
+                        <li><a class="catalog-item" href="#">Забор из штакетника металлического</a></li>
+                        <li><a class="catalog-item" href="#">Деревянные заборы</a></li>
+                        <li><a class="catalog-item" href="#">Забор жалюзи</a></li>
+                        <li><a class="catalog-item" href="#">Забор ДПК</a></li>
+                        <li><a class="catalog-item" href="#">Забор из Евросетки</a></li>
+                        <li><a class="catalog-item" href="#">Деревянные заборы</a></li>
+                        <li><a class="catalog-item" href="#">Кованный забор</a></li>
+                        <li><a class="catalog-item" href="#">Горизонтальные заборы</a></li>
+                      </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                <div class="accordion-item catalog-item-wrap">
+                  <div class="accordion-header catalog-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                      Ворота и калитки
+                    </button>
+                  </div>
+                  <div id="collapse3" class="accordion-collapse collapse">
+                    <ul class="accordion-body">
+                      <li><a class="catalog-item" href="#">Откатные ворота</a></li>
+                      <li><a class="catalog-item" href="#">Распашные ворота</a></li>
+                      <li><a class="catalog-item" href="#">Гаражные ворота</a></li>
+                      <li><a class="catalog-item" href="#">Ролетные ворота</a></li>
+                      <li><a class="catalog-item" href="#">Калитка</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                <div class="col">
+                  <div class="accordion-item catalog-item-wrap">
+                    <div class="accordion-header catalog-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                        Благоустройство
+                      </button>
+                    </div>
+                    <div id="collapse4" class="accordion-collapse collapse">
+                      <ul class="accordion-body">
+                        <li><a class="catalog-item" href="#">Укладка Плитки</a></li>
+                        <li><a class="catalog-item" href="#">Устройство газона</a></li>
+                        <li><a class="catalog-item" href="#">Монтаж террасной доски</a></li>
+                        <li><a class="catalog-item" href="#">Навесы</a></li>
+                        <li><a class="catalog-item" href="#">Вольеры</a></li>
+                        <li><a class="catalog-item" href="#">Дровница</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="accordion-item catalog-item-wrap">
+                    <div class="accordion-header catalog-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                        Материалы
+                      </button>
+                    </div>
+                    <div id="collapse5" class="accordion-collapse collapse">
+                      <ul class="accordion-body">
+                        <li><a class="catalog-item" href="#">Металлопрофиль</a></li>
+                        <li><a class="catalog-item" href="#">Штакетник металлический</a></li>
+                        <li><a class="catalog-item" href="#">Евросетка</a></li>
+                        <li><a class="catalog-item" href="#">Столбы для забора</a></li>
+                        <li><a class="catalog-item" href="#">Доска ДПК для Забора</a></li>
+                        <li><a class="catalog-item" href="#">Доска ДПК для терассы</a></li>
+                        <li><a class="catalog-item" href="#">Комплектующие для ворот откатных</a></li>
+                        <li><a class="catalog-item" href="#">Автоматика для откатных ворот</a></li>
+                        <li><a class="catalog-item" href="#">Блоки для забора</a></li>
+                        <li><a class="catalog-item" href="#">Комплектующие для калитки</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copy">
+          <div class="container">
+            Copyright 2021. Все права защищены.
+          </div>
+        </div>
+      </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
